@@ -516,4 +516,32 @@ footer{
   color: #38bdf8; /* Warna centang biru */
   font-size: 1.1rem;
   margin-top: 2px; /* Menyesuaikan agar centang sejajar dengan teks */
+
+}
+
+/* Responsive adjustments untuk HP */
+@media (max-width: 768px) {
+  /* Memaksa project grid menjadi 1 kolom vertikal */
+  .project-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  /* Mengatur lebar kartu agar tidak terlalu lebar di HP */
+  .project-card {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Mengecilkan font di HP supaya tidak kepotong */
+  .project-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .project-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
 }
